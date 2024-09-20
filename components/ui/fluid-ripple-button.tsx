@@ -45,7 +45,7 @@ export const FluidRippleButton: React.FC<FluidRippleButtonProps> = ({
     const freqX = 0.05 + mousePosition.x * 0.05 + Math.sin(time) * 0.02;
     const freqY = 0.05 + mousePosition.y * 0.05 + Math.cos(time) * 0.02;
     const scaleX = 15 + mousePosition.x * 20 + Math.sin(time * 0.5) * 10;
-    const scaleY = 15 + mousePosition.y * 20 + Math.cos(time * 0.5) * 10;
+   // const scaleY = 15 + mousePosition.y * 20 + Math.cos(time * 0.5) * 10;
     return `
       <filter id="distort">
         <feTurbulence type="turbulence" baseFrequency="${freqX} ${freqY}" numOctaves="5" result="turbulence" />
